@@ -18,3 +18,5 @@ def quicksort(arr, low, high):
 arr = [10, 7, 8, 9, 1, 5]
 quicksort(arr, 0, len(arr) - 1)
 print("Sorted array:", arr)
+
+# output: Sorted array: [1, 5, 7, 8, 9, 10]
