@@ -1,0 +1,27 @@
+To find the average runtime complexity of the non-random pivot version of quicksort, we select the middle element as the pivot and partition the array around it.
+In the scenario of best case, 
+the pivot is the middle element and evenly divides the array into two halves.
+In the scenario of worst case,
+one subarray has almost all the elements, but the other subarray is left with only one element.
+In the scenario of the average case, 
+we will assume tha the pivot splits the array into two subarrays of sizes of "p" and "n-p-1".
+here p = position of pivot element.
+
+By the recurrence relation:
+After the partitioning, we recursively apply quicksort to each of the subarrays 
+that is T(n) = n + 2T(n/2)
+
+where n is the representation of the partitioning step.
+and T(n/2) represents the avg time for sorting each subarray.
+
+Derivation:
+By application of Masters Theorem case 2 
+If f(n) = Theta(n^c) for some constant c < log b base a, then T(n) = Theta(n^{log b base a}).
+here a = 2,  b = 2 ,  f(n) = n.
+so it becomes
+T(n) = Theta(n^ log b base a)
+so
+log b base a = log 2 base 2 = 1
+HEnce,
+T(n) = Θ(n log n)
+     = Thehta(n log n)
