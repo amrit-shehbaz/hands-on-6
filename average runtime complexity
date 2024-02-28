@@ -1,1 +1,6 @@
-
+The average runtime complexity of the non-random pivot version of quicksort is O(nlogn). In other words, time taken to sort an array with size n is nlogn.
+In quicksort, a pivot element and partition the array into three different groups: elements which is greater than the pivot, elements which are equal to the pivot, and elements which is less than the
+pivot. The recurrence relation T(n) = n + 2T(n/2) where T(n)
+represents average time Complexity of quicksort with array size n, and we assume that the pivot divides the array into parts of equal size.
+T(n) = n + 2T(n/2) solving the T(n) using Master Theorem, the
+average runtime complexity is O (n log n) which is efficient and balanced for different inputs.
